@@ -2,7 +2,7 @@ import React, { createContext, } from 'react'
 import { nanoid } from 'nanoid'
 import { useLocalStorage } from 'usehooks-ts'
 
-export interface TodoContextProps {
+interface TodoContextProps {
   todos: Todo[]
   addTodo: (text: string) => void
   deleteTodo: (id: string) => void

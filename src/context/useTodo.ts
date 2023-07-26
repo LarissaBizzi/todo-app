@@ -7,5 +7,6 @@ export const useTodo = () => {
   if (!context) {
     throw new Error('useTodo must be used within a TodoProvider')
   }
+
   return context
 }
