@@ -1,10 +1,14 @@
 {
   "name": "todo-app",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
+  "homepage": "https://larissabizzi.github.io/todo-app",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "start": "react-scripts start",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
